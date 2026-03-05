@@ -83,13 +83,6 @@ export default function ResultsView({
     const { percent, maturityLevel, categories, recommendations, savings } = result;
     const levels = siteConfig.scoring.maturityLevels;
 
-    const mailtoSubject = encodeURIComponent(
-        `KI-Readiness Check Ergebnis — ${companyName} (Score: ${percent}%)`
-    );
-    const mailtoBody = encodeURIComponent(
-        `Hallo,\n\nunser Unternehmen "${companyName}" hat den KI-Readiness Check abgeschlossen.\n\nErgebnis: ${percent}/100 (${maturityLevel.label})\n\nWir interessieren uns für ein Beratungsgespräch.\n\nMit freundlichen Grüßen`
-    );
-
     return (
         <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12">
             {/* Score Hero Card */}
@@ -249,14 +242,6 @@ export default function ResultsView({
               hover:bg-brand-green-hover hover:scale-[1.02] hover:shadow-lg active:scale-[0.98]"
                     >
                         📅 Kostenloses Beratungsgespräch buchen
-                    </a>
-                    <a
-                        href={`mailto:${siteConfig.legal.email}?subject=${mailtoSubject}&body=${mailtoBody}`}
-                        className="inline-flex items-center gap-2 rounded-xl border border-gray-600 px-6 py-3.5
-              font-semibold text-white transition-all
-              hover:border-gray-400 hover:bg-white/5"
-                    >
-                        ✉️ Per E-Mail kontaktieren
                     </a>
                 </div>
             </motion.div>

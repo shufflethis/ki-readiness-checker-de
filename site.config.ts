@@ -1,5 +1,5 @@
 export const siteConfig = {
-  domain: "unternehmenki.de",
+  domain: "ki-readiness-checker.de",
   siteName: "KI-Readiness Check",
   tagline:
     "Finden Sie in 5 Minuten heraus, wo Ihr Unternehmen beim Einsatz von KI steht.",
@@ -53,6 +53,6 @@ export const siteConfig = {
   },
   cta: {
     primary: "Jetzt KI-Check starten",
-    calendly: "https://calendly.com/trackbytrack/ki-beratung",
+    calendly: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ37vXtNEiJgPdMVYb5dssJ2SCErLPRc8WZDQ6PSOp4QPwZU2IJIoKqEExVDt6xnCYrcpQCiQjwu",
   },
 };

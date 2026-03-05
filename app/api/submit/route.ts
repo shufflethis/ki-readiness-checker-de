@@ -193,7 +193,7 @@ export async function POST(req: NextRequest) {
             ${recommendations ? `<h3 style="margin:24px 0 12px">🎯 Ihre Empfehlungen</h3><ol style="padding-left:20px;color:#444">${recommendations}</ol>` : ""}
 
             <div style="text-align:center;margin:32px 0 16px">
-              <a href="https://calendly.com/trackbytrack/ki-beratung" style="display:inline-block;background:#bbd8a7;color:#0D0D0D;font-weight:bold;padding:14px 28px;border-radius:12px;text-decoration:none;font-size:16px">
+              <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ37vXtNEiJgPdMVYb5dssJ2SCErLPRc8WZDQ6PSOp4QPwZU2IJIoKqEExVDt6xnCYrcpQCiQjwu" style="display:inline-block;background:#bbd8a7;color:#0D0D0D;font-weight:bold;padding:14px 28px;border-radius:12px;text-decoration:none;font-size:16px">
                 Kostenloses Beratungsgespräch buchen →
               </a>
             </div>
