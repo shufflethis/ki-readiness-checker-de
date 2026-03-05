@@ -39,38 +39,50 @@ function ImpressumContent() {
     const l = siteConfig.legal;
     return (
         <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Angaben gemäß § 5 TMG</h3>
+            <h3 className="text-lg font-semibold">Angaben gemäß § 5 DDG</h3>
             <p>
                 {l.companyName}
                 <br />
                 {l.street}
                 <br />
                 {l.zip} {l.city}
-                <br />
-                {l.country}
             </p>
-            <h3 className="text-lg font-semibold">Vertreten durch</h3>
-            <p>Geschäftsführer: {l.managingDirector}</p>
-            <h3 className="text-lg font-semibold">Kontakt</h3>
+            <h3 className="text-lg font-semibold">Vertreten durch:</h3>
+            <p>{l.managingDirector}</p>
+            <h3 className="text-lg font-semibold">Kontakt:</h3>
             <p>
                 Telefon: {l.phone}
                 <br />
+                {l.fax && (
+                    <>
+                        Telefax: {l.fax}
+                        <br />
+                    </>
+                )}
                 E-Mail: {l.email}
             </p>
-            <h3 className="text-lg font-semibold">Handelsregister</h3>
+            {l.duns && (
+                <>
+                    <h3 className="text-lg font-semibold">DUNS-Nummer:</h3>
+                    <p>{l.duns}</p>
+                </>
+            )}
+            <h3 className="text-lg font-semibold">Registereintrag:</h3>
             <p>
+                Eintragung im Handelsregister.
+                <br />
                 Registergericht: {l.registerCourt}
                 <br />
                 Registernummer: {l.registerNumber}
             </p>
-            <h3 className="text-lg font-semibold">Umsatzsteuer-ID</h3>
+            <h3 className="text-lg font-semibold">Umsatzsteuer:</h3>
             <p>
-                Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:
+                Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:
                 <br />
                 {l.vatId}
             </p>
             <h3 className="text-lg font-semibold">
-                Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+                Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
             </h3>
             <p>
                 {l.responsibleContent}
@@ -78,6 +90,14 @@ function ImpressumContent() {
                 {l.street}
                 <br />
                 {l.zip} {l.city}
+            </p>
+            <h3 className="text-lg font-semibold">Streitschlichtung</h3>
+            <p>
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor
+                einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+            <p className="mt-8 text-sm text-gray-500">
+                Hier findest du unseren Disclaimer und unsere Datenschutzerklärung über die Links im Footer.
             </p>
         </div>
     );
