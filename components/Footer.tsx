@@ -291,7 +291,14 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="mt-10 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+                    <div className="mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-10 opacity-70 grayscale transition-all hover:grayscale-0 hover:opacity-100 pb-8">
+                        <div className="trust-item"><img alt="BVMW Mitglied – Bundesverband mittelständische Wirtschaft" loading="lazy" width="80" height="40" decoding="async" style={{ color: "transparent", objectFit: "contain", height: "auto" }} src="/images/trust-seals/bvmw-logo.webp" /></div>
+                        <div className="trust-item"><img alt="Google AI Essentials zertifiziert" loading="lazy" width="80" height="40" decoding="async" style={{ color: "transparent", objectFit: "contain", height: "auto" }} src="/images/trust-seals/google-ai-logo.webp" /></div>
+                        <div className="trust-item"><img alt="BSFZ – Bescheinigungsstelle Forschungszulage" loading="lazy" width="60" height="60" decoding="async" style={{ color: "transparent", objectFit: "contain", height: "auto" }} src="/images/trust-seals/bsfz-seal.svg" /></div>
+                        <div className="trust-item"><img alt="famefact – Social Media Agentur Berlin" loading="lazy" width="80" height="40" decoding="async" style={{ color: "transparent", objectFit: "contain", height: "auto" }} src="/images/trust-seals/famefact-logo.png" /></div>
+                    </div>
+
+                    <div className="mt-2 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
                         © {new Date().getFullYear()} {l.companyName}. Alle Rechte vorbehalten.
                     </div>
                 </div>
